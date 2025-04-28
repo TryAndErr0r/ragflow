@@ -16,8 +16,7 @@ services:
     #   - 9382:9382 # entry for MCP (host_port:docker_port). The docker_port should match with the value you set for `mcp-port` above
     volumes:
       - ./ragflow-logs:/ragflow/logs
-      - ../history_data_agent:/ragflow/history_data_agent
-      - ./service_conf.yaml.template:/ragflow/conf/service_conf.yaml.template
+
 
     env_file: .env
     environment:
