@@ -135,7 +135,6 @@ services:
     networks:
       - ragflow
     restart: on-failure
-
   redis:
     # swr.cn-north-4.myhuaweicloud.com/ddn-k8s/docker.io/valkey/valkey:8
     image: valkey/valkey:8
@@ -147,9 +146,6 @@ services:
     networks:
       - ragflow
     restart: on-failure
-
-s
-
 volumes:
   esdata01:
     driver: local
